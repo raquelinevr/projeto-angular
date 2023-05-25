@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="app.component.css">
+
+Login
+<br>
+<mat-card class="card-cadastro">
+  <mat-card-content>
+    <mat-form-field appearance="fill">
+      <input matInput [(ngModel)]="estudante.email" placeholder="Digite o email">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <input matInput [(ngModel)]="estudante.senha" placeholder="Digite a senha">
+    </mat-form-field>
+  </mat-card-content>
+</mat-card>
+<mat-card-actions>
+  <button mat-raised-button color="primary" (click)="cadastrar()">Cadastrar</button>
+</mat-card-actions>
